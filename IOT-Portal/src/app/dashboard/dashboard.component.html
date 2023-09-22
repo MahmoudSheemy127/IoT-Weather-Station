@@ -1,0 +1,87 @@
+<header class="bg-blue-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-white text-xl">Dashboard</h1>
+      
+      <div class="flex items-center" *ngIf="authService.UserData as user">
+        <span class="text-white mr-4">Hello</span>
+        <button class="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded" (click)="authService.signOut()">Sign Out</button>
+      </div>
+    </div>
+</header>
+<!-- <div class=" border-5 bg-red flex flex-col w-full items-center content-center"> -->
+   
+        <!-- <form>
+            <div class="mb-4">
+                <label for="value" class="block text-gray-700 text-sm font-medium mb-1">Value</label>
+                <input [(ngModel)]="parameter.value" type="number" id="value" name="value" class="w-full p-2 border rounded focus:outline-none focus:border-blue-500" placeholder="Enter value">
+            </div>
+            <div class="mb-4">  
+                <label for="data" class="block text-gray-700 text-sm font-medium mb-1">Data</label>
+                <input [(ngModel)]="parameter.date" type="date" id="data" name="date" class="w-full p-2 border rounded focus:outline-none focus:border-blue-500" placeholder="Enter data">
+            </div>
+
+
+            <div class="mb-4">  
+                <select [(ngModel)]="parameter.type" name="type" class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                    <option value="temperature">Temperature</option>
+                    <option value="pressure">pressure</option>
+                    <option value="humidity">humidity</option>
+                </select>                
+            </div>
+
+            <button (click)="save()" type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Submit</button>
+            <button (click)="retrieve()"  type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Retrieve data</button>
+            <button (click)="changeTemp()"  type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Change Temp</button>
+            <button (click)="delete()"  type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Delete</button>
+    
+        </form> -->
+
+    <!-- <div class="flex flex-row">
+        <div class="flex flex-col border-2 rounded ">
+            <h2>Humidity records</h2>
+            <div *ngFor="let parameter of tempParameters" class="border-2 rounded">
+                <div>
+                    value: {{parameter.value}}
+                </div>
+                <div>
+                    date: {{parameter.date}}
+                </div>
+            </div>
+                
+        </div>
+        <div class="border-2 rounded">
+            <div>Last record</div>
+            <div>
+                value: {{lastParamter.value}}
+            </div>
+            <div>
+                date: {{lastParamter.date}}
+            </div>
+
+        </div>
+    
+    </div> -->
+    <div class="flex flex-col w-100 justify-center border content-center">
+        <h1 class="border text-center text-5xl text-red-500">Temperature</h1>
+        <div class="temp-section flex flex-col md:flex-row">
+            <div id="tempLineGrid" class="iot-chart"></div>
+            <div id="tempGauge" class="iot-chart"></div>
+        </div>
+    </div>
+    
+    <div class="flex flex-col justify-center border content-center">
+        <h1 class="border text-center text-5xl text-yellow-500">Humidity</h1>
+        <div class="humidity-section flex flex-col md:flex-row">
+            <div id="humidityLineGrid" class="iot-chart"></div>
+            <div id="humidityGauge" class="iot-chart"></div>
+        </div>
+    </div>
+    
+    <div class="flex flex-col justify-center border content-center">
+        <h1 class="border text-center text-5xl text-blue-500">Pressure</h1>
+        <div class="pressure-section flex flex-col md:flex-row">
+            <div id="pressureLineGrid" class="iot-chart"></div>
+            <div id="pressureGauge" class="iot-chart"></div>
+        </div>
+    </div>
+<!-- </div> -->

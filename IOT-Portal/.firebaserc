@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "iot-test-7ae0b": {
+      "hosting": {
+        "IOT-Portal": [
+          "iot-test-7ae0b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "iot-test-7ae0b"
+  }
+}

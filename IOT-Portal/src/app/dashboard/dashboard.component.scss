@@ -1,0 +1,19 @@
+.iot-chart {
+    width:  100%; /* Take up the full width */
+    height: 300px; /* Set a reasonable height for charts */
+}
+
+
+
+@media (min-width: 768px) {
+    /* For screens with a minimum width of 768px (typical tablet and up) */
+    .iot-chart {
+        width: 50%; /* Take up half of the available width */
+        height: 500px;
+    }
+}
+
+
+
+
+
