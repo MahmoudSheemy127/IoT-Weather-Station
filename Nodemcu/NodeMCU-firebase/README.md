@@ -4,15 +4,15 @@ database using the [Firebase-ESP-Client](https://github.com/mobizt/Firebase-ESP-
 with the current timestamp.
 
 ## Connections and Diagram
-![wiring diagram](image.jpg)
-![breadboard looking](image.jpg)
+![wiring diagram](assets/Circuit_Wiring.jpg)
+![breadboard looking](assets/IMG_0605.JPG)
 
 
 ## Libraries used
-1- **Platform I/O**: VScode IDE extension to develop and build NodeMCU projects
-2- **Firebase-ESP-Client**: Library for accessing firebase you can access library from [here](https://github.com/mobizt/Firebase-ESP-Client)
-3- **RTC@^2.4.2**: Library for interfacing with RTC DS13002 you can access library from [here](https://github.com/Makuna/Rtc)
-4- **BME208**: Library for interfacing with BME208 sensor you can access library from [here](https://github.com/adafruit/Adafruit_BME280_Library)
+1. **Platform I/O**: VScode IDE extension to develop and build NodeMCU projects
+2. **Firebase-ESP-Client**: Library for accessing firebase you can access library from [here](https://github.com/mobizt/Firebase-ESP-Client)
+3. **RTC@^2.4.2**: Library for interfacing with RTC DS13002 you can access library from [here](https://github.com/Makuna/Rtc)
+4. **BME208**: Library for interfacing with BME208 sensor you can access library from [here](https://github.com/adafruit/Adafruit_BME280_Library)
 
 ## Getting Started
 1. Download Platform I/O vscode extension from [here](https://platformio.org/install/ide?install=vscode)
