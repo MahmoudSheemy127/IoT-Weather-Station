@@ -12,4 +12,5 @@ The NodeMCU serves as a station point that retrieves the weather data that is th
 
 ## Project Showcase
 You can watch the youtube video from here:
+
 [![Watch the video](https://img.youtube.com/vi/Go8dzMYW5yE/0.jpg)](https://www.youtube.com/watch?v=Go8dzMYW5yE)
