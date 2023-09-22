@@ -11,3 +11,5 @@ The NodeMCU serves as a station point that retrieves the weather data that is th
 2. **IOT-Portal**: This directory contains an AngularJS project directory which contains the code for the user-side Web application that can access the weather station data, it contains a readme for further documentation regarding this part.
 
 ## Project Showcase
+You can watch the youtube video from here:
+[![Watch the video](https://img.youtube.com/vi/Go8dzMYW5yE/0.jpg)](https://www.youtube.com/watch?v=Go8dzMYW5yE)
